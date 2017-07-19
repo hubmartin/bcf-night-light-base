@@ -118,7 +118,7 @@ void application_init(void)
 	// Init Radio
 	bc_radio_init();
 	bc_radio_set_event_handler(radio_event_handler, NULL);
-	//bc_radio_listen();
+	bc_radio_listen();
 
 	// PCB LED
 	bc_led_init(&led, BC_GPIO_LED, false, false);
